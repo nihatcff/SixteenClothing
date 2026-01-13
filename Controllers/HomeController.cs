@@ -10,17 +10,18 @@ namespace SixteenClothing.Controllers
     {
         public async Task<IActionResult> Index()
         {
-            var data = await _context.Products.ToListAsync();
-            List<ProductGetVM> vm = new List<ProductGetVM>();
-            vm = data.Select(x => new ProductGetVM()
+            var products = await _context.Products.Select(x=>new ProductGetVM
             {
+                Id = x.Id,
+                Name = x.Name,
                 Description = x.Description,
                 ImagePath = x.ImagePath,
+                CategoryName = x.Category.Name,
                 Price = x.Price,
                 Rating = x.Rating,
-                Name = x.Name
-            }).ToList();
-            return View(vm);
+
+            }).ToListAsync();
+            return View(products);
         }
     }
 }
