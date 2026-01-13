@@ -7,18 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Areas\**" />
-    <Content Remove="Areas\**" />
-    <EmbeddedResource Remove="Areas\**" />
-    <None Remove="Areas\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
-    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.22" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.22" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.22">
@@ -29,14 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Areas\Admin\Views\Dashboard\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Product\Create.cshtml" />
     <None Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
-    <None Include="Areas\Admin\Views\Dashboard\Index1.cshtml" />
-    <None Include="Areas\Admin\Views\Dashboard\Test.cshtml" />
     <None Include="Areas\Admin\Views\Product\Index.cshtml" />
     <None Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <None Include="Areas\Admin\Views\_ViewImports.cshtml" />
-    <None Include="Areas\Admin\Views\_ViewStart.cshtml" />
   </ItemGroup>
 
 </Project>

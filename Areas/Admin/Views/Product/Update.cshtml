@@ -1,12 +1,12 @@
-﻿@model ProductCreateVM
+﻿@model ProductUpdateVM
 
 <div class="container">
-	<div class="row">
+    <div class="row">
 
         <form method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label asp-for="Name"></label>
-                <input asp-for="Name" class="form-control"  placeholder="Enter Name">
+                <input asp-for="Name" class="form-control" placeholder="Enter Name">
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
 
@@ -38,15 +38,15 @@
                 <label asp-for="CategoryId"></label>
                 <select asp-for="CategoryId" class="form-select">
                     <option value="">-- Select Category --</option>
-                    @foreach (Category category in ViewBag.Categoires)
+                    @foreach (Category category in ViewBag.Categories)
                     {
                         <option value="@category.Id">@category.Name</option>
-					}
+                    }
                 </select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
-            
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-warning">Update</button>
+            <button asp-action="Index" class="btn btn-danger">Cancel</button>
         </form>
-	</div>
+    </div>
 </div>
