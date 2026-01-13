@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SixteenClothing.Models;
-using System.ComponentModel.DataAnnotations;
 
 namespace SixteenClothing.ViewModels.ProductViewModels
 {

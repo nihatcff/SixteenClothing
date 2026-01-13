@@ -18,7 +18,7 @@ namespace SixteenClothing.Controllers
                 ImagePath = x.ImagePath,
                 Price = x.Price,
                 Rating = x.Rating,
-                Title = x.Name
+                Name = x.Name
             }).ToList();
             return View(vm);
         }

@@ -368,7 +368,7 @@ function initMap() {
         }]
       },
       {
-        "featureType": "administrative",
+        "featureType": "Administrative",
         "elementType": "labels",
         "stylers": [{
           "visibility": "simplified"
@@ -503,7 +503,7 @@ function initMap() {
         }]
       },
       {
-        "featureType": "administrative",
+        "featureType": "Administrative",
         "elementType": "geometry.stroke",
         "stylers": [{
           "visibility": "on"
@@ -514,7 +514,7 @@ function initMap() {
         ]
       },
       {
-        "featureType": "administrative",
+        "featureType": "Administrative",
         "elementType": "geometry.fill",
         "stylers": [{
           "color": "#7f2200"
@@ -525,7 +525,7 @@ function initMap() {
         ]
       },
       {
-        "featureType": "administrative",
+        "featureType": "Administrative",
         "elementType": "labels.text.stroke",
         "stylers": [{
           "color": "#ffffff"
@@ -539,14 +539,14 @@ function initMap() {
         ]
       },
       {
-        "featureType": "administrative",
+        "featureType": "Administrative",
         "elementType": "labels.text.fill",
         "stylers": [{
           "color": "#495421"
         }]
       },
       {
-        "featureType": "administrative.neighborhood",
+        "featureType": "Administrative.neighborhood",
         "elementType": "labels",
         "stylers": [{
           "visibility": "off"
@@ -575,7 +575,7 @@ function initMap() {
         ]
       },
       {
-        "featureType": "administrative",
+        "featureType": "Administrative",
         "stylers": [{
           "visibility": "on"
         },
