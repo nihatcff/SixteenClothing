@@ -16,7 +16,7 @@ namespace SixteenClothing
 
             builder.Services.AddDbContext<AppDbContext>(option =>
             {
-                option.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+                option.UseSqlServer(builder.Configuration.GetConnectionString("Home"));
             });
 
             builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
@@ -31,6 +31,8 @@ namespace SixteenClothing
 
 
             var app = builder.Build();
+
+
             app.UseStaticFiles();
             app.UseRouting();
 

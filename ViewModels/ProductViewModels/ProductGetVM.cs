@@ -1,15 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using SixteenClothing.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace SixteenClothing.ViewModels.ProductViewModels
 {
     public class ProductGetVM
     {
-        public string Title { get; set; } = string.Empty;
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public decimal Price { get; set; }
-        public double Rating { get; set; }
         public string ImagePath { get; set; } = string.Empty;
-        public int ReviewCount { get; set; }
+        public decimal Price { get; set; }
+        public double Rating { get; set; } = 0;
+        public string CategoryName { get; set; } = string.Empty;
     }
 }
